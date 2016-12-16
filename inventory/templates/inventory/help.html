@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load bootstrap3 %}
+
+
+{% block title %}help{% endblock %}
+{% block content %}
+{% if request.user.is_authenticated %}
+    <div>
+        <h3> Having trouble? Questions?</h3>
+        <h4>
+            Ask a Question
+        </h4>
+        <p>
+Please describe the problem or ask your question below. Hit "Get Help!" when you're finished.</p>
+    </div>
+    <form method="post">
+        {% csrf_token %}
+        {% bootstrap_form form %}
+        <a href="{% url 'inventory:landing' %}"class="btn btn-primary"> Get Help</a>
+
+
+    </form>
+{% else %}
+
+{% endif %}
+
+{% endblock %}

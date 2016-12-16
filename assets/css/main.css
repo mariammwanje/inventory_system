@@ -1,0 +1,23 @@
+body{
+  padding-top: 66px;
+}
+.navbar-inverse .navbar-brand {
+    color: #fff;
+}
+.nav > li{
+  color: #ffffff;
+}
+.navbar-inverse {
+    background-color: #016CA4 !important;
+    border-color: #ffffff !important;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
+    color: #fff;
+    background-color: #2991D6 !important;
+
+}
+.extra-block-3::before, .extra-block-3, .extra-block-3::after {
+    background: #433b8f !important;
+
+}
